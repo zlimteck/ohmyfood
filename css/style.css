@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+body {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+header {
+  font-family: "shrikhand";
+  text-align: center;
+  padding: 0.1px;
+  box-shadow: 0px 5px 5px lightgrey;
+}
+header h1 {
+  margin-bottom: 5px;
+}
+
+.localisation {
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.localisation i {
+  margin-right: 10px;
+}
+.localisation p {
+  font-weight: 500;
+}
+
+.presentation {
+  padding: 20px;
+  text-align: center;
+  background-color: #fafafa;
+}
+.presentation h2 {
+  margin: 0;
+}
+.presentation .btn {
+  width: 250px;
+  padding: 10px 15px;
+  background: linear-gradient(160deg, #ff79da, #9356dc);
+  border: none;
+  border-radius: 50px;
+  font-size: large;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.presentation .btn:hover {
+  background: linear-gradient(160deg, #9356dc, #ff79da);
+}
+
+/*# sourceMappingURL=style.css.map */
