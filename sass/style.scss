@@ -8,7 +8,7 @@ body, main {
 }
 
 header {
-    font-family: "shrikhand";
+    font-family: "shrikhand", sans-serif;
     text-align: center;
     padding: 0.1px;
     box-shadow: 0px 5px 5px lightgrey;
@@ -126,6 +126,17 @@ header {
         position: relative;
         cursor: pointer;
 
+        .restaurant-img {
+            width: 100%;
+            height: 200px;
+            border-radius: 20px 20px 0px 0px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
         .new-restaurant {
             font-weight: bold;
             background-color: #99e2d0;
@@ -184,7 +195,42 @@ header {
     }
 }
 
+footer {
+    background-color: #353535;
+    padding: 20px;
+    color: white;
+
+    h3 {
+        font-family: "shrikhand", sans-serif;
+        font-weight: 300;
+    }
+
+    p {
+        cursor: pointer;
+    }
+
+    a {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-decoration: none;
+        padding-bottom: 10px;
+    }
+
+    i {
+        padding-right: 5px;
+    }
+}
+
 @media screen and (min-width: 1440px) {
+
+    .presentation {
+        margin-block-end: 40px;
+    }
+
+    .steps {
+        margin-block-end: 50px;
+    }
 
     .step-list {
         display: flex;
@@ -199,6 +245,7 @@ header {
     }
 
     .restaurants {
+        margin-block-end: 200px;
 
         .restaurant-list {
             display: flex;
@@ -208,6 +255,27 @@ header {
         .restaurant-form {
             width: 300px;
             margin-bottom: 0px;
+        }
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 100px;
+
+        p {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        a {
+            padding-bottom: 0px;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
