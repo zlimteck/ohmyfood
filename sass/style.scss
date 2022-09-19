@@ -272,6 +272,10 @@ footer {
         .restaurant-form {
             width: 300px;
             margin-bottom: 0px;
+
+            &:hover {
+                transform: scale(1.05); 
+            }
         }
     }
 

@@ -236,6 +236,9 @@ footer i {
     width: 300px;
     margin-bottom: 0px;
   }
+  .restaurants .restaurant-form:hover {
+    transform: scale(1.05);
+  }
   footer {
     display: flex;
     justify-content: space-between;
