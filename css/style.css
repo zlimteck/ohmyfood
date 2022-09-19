@@ -185,29 +185,6 @@ header a:hover {
   opacity: 1;
 }
 
-footer {
-  background-color: #353535;
-  padding: 20px;
-  color: white;
-}
-footer h3 {
-  font-family: "shrikhand", sans-serif;
-  font-weight: 300;
-}
-footer p {
-  cursor: pointer;
-}
-footer a {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  text-decoration: none;
-  padding-bottom: 10px;
-}
-footer i {
-  padding-right: 5px;
-}
-
 @media screen and (min-width: 1440px) {
   .presentation {
     margin-block-end: 40px;
@@ -239,6 +216,31 @@ footer i {
   .restaurants .restaurant-form:hover {
     transform: scale(1.05);
   }
+}
+footer {
+  background-color: #353535;
+  padding: 20px;
+  color: white;
+}
+footer h3 {
+  font-family: "shrikhand", sans-serif;
+  font-weight: 300;
+}
+footer p {
+  cursor: pointer;
+}
+footer a {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+footer i {
+  padding-right: 5px;
+}
+
+@media screen and (min-width: 1440px) {
   footer {
     display: flex;
     justify-content: space-between;

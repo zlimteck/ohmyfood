@@ -1,0 +1,50 @@
+footer {
+    background-color: #353535;
+    padding: 20px;
+    color: white;
+
+    h3 {
+        font-family: "shrikhand", sans-serif;
+        font-weight: 300;
+    }
+
+    p {
+        cursor: pointer;
+    }
+
+    a {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-decoration: none;
+        padding-bottom: 10px;
+    }
+
+    i {
+        padding-right: 5px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 100px;
+
+        p {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        a {
+            padding-bottom: 0px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
