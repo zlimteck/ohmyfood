@@ -59,11 +59,15 @@ header a:hover {
   background: linear-gradient(170deg, #ff79da, #9356dc);
   border: none;
   border-radius: 50px;
-  font-size: large;
   color: white;
   margin-top: 20px;
   margin-bottom: 20px;
   cursor: pointer;
+}
+.presentation .btn a {
+  color: white;
+  text-decoration: none;
+  font-size: large;
 }
 .presentation .btn:hover {
   background: linear-gradient(170deg, #9356dc, #ff79da);
