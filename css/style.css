@@ -45,8 +45,18 @@ header a:hover {
 .localisation i {
   margin-right: 10px;
 }
-.localisation p {
-  font-weight: 500;
+.localisation input {
+  font-size: medium;
+  font-weight: bold;
+  border: none;
+  color: black;
+  background-color: #eaeaea;
+  flex-basis: 8rem;
+  width: 10px;
+  height: 50px;
+}
+.localisation ::placeholder {
+  color: black;
 }
 
 .presentation {

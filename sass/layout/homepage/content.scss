@@ -9,8 +9,19 @@
         margin-right: 10px;
     }
 
-    p {
-        font-weight: 500;
+    input {
+        font-size: medium;
+        font-weight: bold;
+        border: none;
+        color: black;
+        background-color: #eaeaea;
+        flex-basis: 8rem;
+        width: 10px;
+        height: 50px;
+    }
+
+    ::placeholder {
+        color: black;
     }
 }
 
