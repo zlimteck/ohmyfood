@@ -275,6 +275,14 @@ footer i {
     text-decoration: underline;
   }
 }
+@keyframes spin-check {
+  0% {
+    transform: rotate(-280deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 .restaurant-banner img {
   width: 100%;
   height: 30vh;
@@ -344,12 +352,29 @@ footer i {
   box-shadow: 0px 5px 5px lightgrey;
   margin: 10px 20px 10px 20px;
   cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.menu-card:hover .menu-check {
+  right: 0px;
+  transition: 0.7s ease-in-out;
+}
+.menu-card:hover .menu-check i {
+  animation: spin-check 0.9s linear;
 }
 
-.menu-card-title {
+.menu-card-content {
+  width: 100%;
+  transition: 0.8s ease-in-out;
+}
+.menu-card-content:hover {
+  width: calc(100% - 100px);
+  transition: 0.9s ease-in-out;
+}
+.menu-card-content .menu-card-title {
   display: flex;
 }
-.menu-card-title h4 {
+.menu-card-content .menu-card-title h4 {
   margin-bottom: 10px;
   margin-top: 10px;
   padding-left: 10px;
@@ -357,25 +382,54 @@ footer i {
   white-space: nowrap;
   overflow: hidden;
 }
-
-.menu-card-description {
+.menu-card-content .menu-card-description {
   display: flex;
-  flex-direction: row;
+  white-space: nowrap;
   justify-content: space-between;
 }
-.menu-card-description p {
+.menu-card-content .menu-card-description .info {
   padding-left: 10px;
   margin-top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.menu-card-description .price {
+.menu-card-content .menu-card-description .price {
   font-weight: bold;
   padding-right: 20px;
   margin-top: 0;
 }
 
+.menu-check {
+  position: absolute;
+  text-align: center;
+  right: -100px;
+  top: 0;
+  width: 100px;
+  height: 80px;
+  background-color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.7s ease-in-out;
+  margin-left: 10px;
+}
+.menu-check i {
+  font-size: 30px;
+  color: white;
+}
+
 @media screen and (min-width: 1440px) {
   .restaurant-banner img {
     height: 40vh;
+  }
+}
+@keyframes spin-check {
+  0% {
+    transform: rotate(-280deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
 

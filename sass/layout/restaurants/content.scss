@@ -1,3 +1,5 @@
+@import "../../utils/animations.scss";
+
 .restaurant-banner {
 
     img {
@@ -75,35 +77,80 @@
     box-shadow: 0px 5px 5px lightgrey;
     margin: 10px 20px 10px 20px;
     cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+    &:hover .menu-check {
+        right: 0px;
+        transition: 0.7s ease-in-out;
+
+        i {
+            animation: spin-check 0.9s linear;
+        } 
+    }
 }
 
-.menu-card-title {
-    display: flex;
+.menu-card-content {
+    width: 100%;
+    transition: 0.8s ease-in-out;
     
-    h4 {
-        margin-bottom: 10px;
-        margin-top: 10px;
-        padding-left: 10px;
-        font-size: larger;
-        white-space: nowrap;
-        overflow: hidden;
+    &:hover {
+        width: calc(100% - 100px);
+        transition: 0.9s ease-in-out;
     }
+
+    .menu-card-title {
+        display: flex;
+        
+        h4 {
+            margin-bottom: 10px;
+            margin-top: 10px;
+            padding-left: 10px;
+            font-size: larger;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+
+    .menu-card-description {
+        display: flex;
+        white-space: nowrap;
+        justify-content: space-between;
+    
+        .info {
+            padding-left: 10px;
+            margin-top: 0;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    
+        .price {
+            font-weight: bold;
+            padding-right: 20px;
+            margin-top: 0;
+        }
+    } 
 }
 
-.menu-card-description {
+.menu-check {
+    position: absolute;
+    text-align: center;
+    right: -100px;
+    top: 0;
+    width: 100px;
+    height: 80px;
+    background-color: #99E2D0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s ease-in-out;
+    margin-left: 10px;
 
-    p {
-        padding-left: 10px;
-        margin-top: 0;
-    }
-
-    .price {
-        font-weight: bold;
-        padding-right: 20px;
-        margin-top: 0;
+    i {
+        font-size: 30px;
+        color: white;
     }
 }
 
