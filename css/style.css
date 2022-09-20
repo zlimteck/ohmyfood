@@ -286,13 +286,14 @@ footer i {
   position: relative;
   border-radius: 30px 30px 0 0;
   margin-top: -50px;
-  background: white;
+  background: #fafafa;
 }
 .restaurant-name h2 {
   font-family: "shrikhand", sans-serif;
   font-weight: 400;
   margin-left: 10px;
   padding: 20px;
+  margin-bottom: 0;
 }
 .restaurant-name i {
   font-size: 25px;
@@ -310,6 +311,66 @@ footer i {
 }
 .restaurant-name .fas:hover {
   opacity: 1;
+}
+
+.menu-restaurant {
+  background-color: #fafafa;
+}
+
+.menu-list {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+}
+.menu-list h3 {
+  font-weight: 400;
+  padding: 30px 30px 0px 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.underline {
+  width: 40px;
+  height: 3px;
+  background-color: #99e2d0;
+  padding: 0;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.menu-card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px lightgrey;
+  margin: 10px 20px 10px 20px;
+  cursor: pointer;
+}
+
+.menu-card-title {
+  display: flex;
+}
+.menu-card-title h4 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-left: 10px;
+  font-size: larger;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu-card-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu-card-description p {
+  padding-left: 10px;
+  margin-top: 0;
+}
+.menu-card-description .price {
+  font-weight: bold;
+  padding-right: 20px;
+  margin-top: 0;
 }
 
 @media screen and (min-width: 1440px) {
