@@ -381,6 +381,7 @@ footer i {
   font-size: larger;
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-card-content .menu-card-description {
   display: flex;
