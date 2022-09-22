@@ -204,38 +204,6 @@ header a:hover {
   opacity: 1;
 }
 
-@media screen and (min-width: 1440px) {
-  .presentation {
-    margin-block-end: 40px;
-  }
-  .steps {
-    margin-block-end: 50px;
-  }
-  .step-list {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-  }
-  .step {
-    justify-content: center;
-    width: 300px;
-    margin-right: 60px;
-  }
-  .restaurants {
-    margin-block-end: 200px;
-  }
-  .restaurants .restaurant-list {
-    display: flex;
-    justify-content: space-between;
-  }
-  .restaurants .restaurant-form {
-    width: 300px;
-    margin-bottom: 0px;
-  }
-  .restaurants .restaurant-form:hover {
-    transform: scale(1.05);
-  }
-}
 footer {
   background-color: #353535;
   padding: 20px;
@@ -259,23 +227,6 @@ footer i {
   padding-right: 5px;
 }
 
-@media screen and (min-width: 1440px) {
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 100px;
-  }
-  footer p:hover {
-    text-decoration: underline;
-  }
-  footer a {
-    padding-bottom: 0px;
-  }
-  footer a:hover {
-    text-decoration: underline;
-  }
-}
 @keyframes spin-check {
   0% {
     transform: rotate(-280deg);
@@ -500,11 +451,6 @@ footer i {
   background: linear-gradient(170deg, #9356dc, #ff79da);
 }
 
-@media screen and (min-width: 1440px) {
-  .restaurant-banner img {
-    height: 40vh;
-  }
-}
 @keyframes spin-check {
   0% {
     transform: rotate(-280deg);
@@ -521,6 +467,59 @@ footer i {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@media screen and (min-width: 1440px) {
+  /*HomePage*/
+  .presentation {
+    margin-block-end: 40px;
+  }
+  .steps {
+    margin-block-end: 50px;
+  }
+  .step-list {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+  .step {
+    justify-content: center;
+    width: 300px;
+    margin-right: 60px;
+  }
+  .restaurants {
+    margin-block-end: 200px;
+  }
+  .restaurants .restaurant-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .restaurants .restaurant-form {
+    width: 300px;
+    margin-bottom: 0px;
+  }
+  .restaurants .restaurant-form:hover {
+    transform: scale(1.05);
+  }
+  /*Restaurants*/
+  .restaurant-banner img {
+    height: 40vh;
+  }
+  /*Footer*/
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+  }
+  footer p:hover {
+    text-decoration: underline;
+  }
+  footer a {
+    padding-bottom: 0px;
+  }
+  footer a:hover {
+    text-decoration: underline;
   }
 }
 

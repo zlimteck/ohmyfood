@@ -1,0 +1,74 @@
+@media screen and (min-width: 1440px) {
+
+    /*HomePage*/
+
+    .presentation {
+        margin-block-end: 40px;
+    }
+
+    .steps {
+        margin-block-end: 50px;
+    }
+
+    .step-list {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .step {
+        justify-content: center;
+        width: 300px;
+        margin-right: 60px;
+    }
+
+    .restaurants {
+        margin-block-end: 200px;
+
+        .restaurant-list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .restaurant-form {
+            width: 300px;
+            margin-bottom: 0px;
+
+            &:hover {
+                transform: scale(1.05); 
+            }
+        }
+    }
+
+    /*Restaurants*/
+
+    .restaurant-banner {
+    
+        img {
+            height: 40vh;
+        }
+    }
+
+    /*Footer*/
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 100px;
+
+        p {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        a {
+            padding-bottom: 0px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
