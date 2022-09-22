@@ -17,3 +17,18 @@
         transform: translateY(0);
     }
 }
+
+@keyframes loader-disappear {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes text-loader {
+    to {
+      background-position: 300% center;
+    }
+  }
