@@ -412,6 +412,10 @@ footer i {
   animation-delay: 2400ms;
 }
 
+.delay-9 {
+  animation-delay: 2700ms;
+}
+
 .menu-card-content {
   width: 100%;
   transition: 0.8s ease-in-out;
