@@ -5,6 +5,15 @@ body, main {
   max-width: 1440px;
   font-family: "Roboto", sans-serif;
 }
+body::-webkit-scrollbar, main::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track, main::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb, main::-webkit-scrollbar-thumb {
+  background: linear-gradient(100deg, #9356dc, #ff79da);
+}
 
 html {
   scroll-behavior: smooth;

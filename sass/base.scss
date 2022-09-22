@@ -5,6 +5,18 @@ body, main {
     margin: 0 auto;
     max-width: 1440px;
     font-family: 'Roboto', sans-serif;
+
+    &::-webkit-scrollbar {
+        width: 12px; /* width of the entire scrollbar */
+    }
+      
+    &::-webkit-scrollbar-track {
+        background: transparent; /* color of the tracking area */
+    }
+      
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(100deg, #9356dc, #ff79da);
+    }
 }
 
 html {
