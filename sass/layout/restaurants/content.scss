@@ -79,7 +79,9 @@
     cursor: pointer;
     overflow: hidden;
     position: relative;
-
+    animation: appear-card 1s;
+    animation-fill-mode: both;
+    
     &:hover .menu-check {
         right: 0px;
         transition: 0.7s ease-in-out;
@@ -87,6 +89,12 @@
         i {
             animation: spin-check 0.9s linear;
         } 
+    }
+}
+
+@for $i from 0 to 9 {
+    .delay-#{$i} {
+      animation-delay: 300ms * $i;
     }
 }
 
