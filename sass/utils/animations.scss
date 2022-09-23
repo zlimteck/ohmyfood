@@ -27,8 +27,11 @@
     }
 }
 
-@keyframes text-loader {
+@keyframes spin-circle {
+    0% {
+        transform: rotate(0);
+    }
     100% {
-      background-position: 300% center;
+        transform: rotate(360deg);
     }
 }
