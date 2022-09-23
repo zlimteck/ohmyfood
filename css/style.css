@@ -1,15 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 body, main {
   margin: 0 auto;
   max-width: 1440px;
   font-family: "Roboto", sans-serif;
 }
 body::-webkit-scrollbar, main::-webkit-scrollbar {
-  width: 12px; /* width of the entire scrollbar */
+  width: 12px;
 }
 body::-webkit-scrollbar-track, main::-webkit-scrollbar-track {
-  background: transparent; /* color of the tracking area */
+  background: transparent;
 }
 body::-webkit-scrollbar-thumb, main::-webkit-scrollbar-thumb {
   background: linear-gradient(100deg, #9356dc, #ff79da);
@@ -103,7 +103,7 @@ header a:hover {
   }
 }
 @keyframes text-loader {
-  to {
+  100% {
     background-position: 300% center;
   }
 }
@@ -326,7 +326,7 @@ footer i {
   }
 }
 @keyframes text-loader {
-  to {
+  100% {
     background-position: 300% center;
   }
 }
@@ -563,7 +563,7 @@ footer i {
   }
 }
 @keyframes text-loader {
-  to {
+  100% {
     background-position: 300% center;
   }
 }
