@@ -140,8 +140,10 @@ header a:hover {
   margin: 0;
 }
 .presentation .btn {
+  margin-left: auto;
+  margin-right: auto;
   width: 250px;
-  padding: 10px 15px;
+  padding: 15px 15px;
   background: linear-gradient(170deg, #ff79da, #9356dc);
   box-shadow: 0px 5px 5px lightgrey;
   border: none;
@@ -516,6 +518,8 @@ footer i {
   margin-bottom: 50px;
 }
 .command .btn {
+  display: flex;
+  justify-content: center;
   width: 200px;
   padding: 15px 15px;
   background: linear-gradient(170deg, #ff79da, #9356dc);
