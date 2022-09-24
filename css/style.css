@@ -24,7 +24,7 @@ html {
   inset: 0;
   height: 100vh;
   z-index: 1;
-  background-color: whitesmoke;
+  background-color: black;
   opacity: 0.9;
   animation: loader-disappear 5s;
   animation-fill-mode: forwards;
@@ -47,6 +47,15 @@ html {
   border-radius: 50%;
   background: linear-gradient(-210deg, #ff79da, #9356dc, #99E2D0);
   animation: spin-circle 2s linear infinite;
+  box-shadow: 0 0 20px #99E2D0;
+}
+.loader .loader-content .circle .fa-solid {
+  color: #99E2D0;
+  font-size: 30px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .loader .loader-content .title {
   color: #9356dc;
