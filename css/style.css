@@ -12,11 +12,18 @@ body::-webkit-scrollbar-track, main::-webkit-scrollbar-track {
   background: transparent;
 }
 body::-webkit-scrollbar-thumb, main::-webkit-scrollbar-thumb {
-  background: linear-gradient(100deg, #9356dc, #ff79da);
+  background: linear-gradient(100deg, var(--primary), var(--secondary));
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/*COLORS*/
+:root {
+  --primary: #9356DC;
+  --secondary: #FF79DA;
+  --tertiary: #99E2D0;
 }
 
 .loader {
@@ -43,14 +50,14 @@ html {
 .loader .loader-content .circle {
   width: 60px;
   height: 60px;
-  border: 3px solid #99E2D0;
+  border: 3px solid var(--tertiary);
   border-radius: 50%;
-  background: linear-gradient(-210deg, #ff79da, #9356dc, #99E2D0);
+  background: linear-gradient(-210deg, var(--secondary), var(--primary), var(--tertiary));
   animation: spin-circle 2s linear infinite;
-  box-shadow: 0 0 20px #99E2D0;
+  box-shadow: 0 0 20px var(--tertiary);
 }
 .loader .loader-content .circle .fa-solid {
-  color: #99E2D0;
+  color: var(--tertiary);
   font-size: 30px;
   position: relative;
   top: 50%;
@@ -58,7 +65,7 @@ html {
   transform: translate(-50%, -50%);
 }
 .loader .loader-content .title {
-  color: #9356dc;
+  color: var(--primary);
 }
 
 header {
@@ -82,7 +89,7 @@ header a {
   font-size: 25px;
 }
 header a:hover {
-  color: #9356dc;
+  color: var(--primary);
 }
 
 @keyframes spin-check {
@@ -156,7 +163,7 @@ header a:hover {
   margin-right: auto;
   width: 250px;
   padding: 15px 15px;
-  background: linear-gradient(170deg, #ff79da, #9356dc);
+  background: linear-gradient(170deg, var(--secondary), var(--primary));
   box-shadow: 0px 5px 5px lightgrey;
   border: none;
   border-radius: 50px;
@@ -171,7 +178,7 @@ header a:hover {
   font-size: large;
 }
 .presentation .btn:hover {
-  background: linear-gradient(170deg, #9356dc, #ff79da);
+  background: linear-gradient(170deg, var(--primary), var(--secondary));
 }
 
 .steps {
@@ -187,7 +194,7 @@ header a:hover {
   position: relative;
 }
 .steps .number {
-  background-color: #9356DC;
+  background-color: var(--primary);
   color: white;
   border-radius: 50%;
   padding: 1px 5px;
@@ -213,7 +220,7 @@ header a:hover {
   background-color: #e4d5f6;
 }
 .steps .step:hover .fa-solid {
-  color: #9356DC;
+  color: var(--primary);
 }
 .steps .fa-solid {
   color: #7e7e7e;
@@ -244,7 +251,7 @@ header a:hover {
 }
 .restaurants .restaurant-form .new-restaurant {
   font-weight: bold;
-  background-color: #99e2d0;
+  background-color: var(--tertiary);
   color: #1a8a68;
   width: 100px;
   text-align: center;
@@ -281,7 +288,7 @@ header a:hover {
 }
 .restaurants .restaurant-form .restaurant-information .fas {
   color: transparent;
-  background-image: linear-gradient(170deg, #ff79da, #9356dc);
+  background-image: linear-gradient(170deg, var(--secondary), var(--primary));
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
@@ -373,10 +380,11 @@ footer i {
   right: 10px;
   top: 35%;
   padding-right: 20px;
+  cursor: pointer;
 }
 .restaurant-name .fas {
   color: transparent;
-  background-image: linear-gradient(170deg, #ff79da, #9356dc);
+  background-image: linear-gradient(170deg, var(--secondary), var(--primary));
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
@@ -404,7 +412,7 @@ footer i {
 .underline {
   width: 40px;
   height: 3px;
-  background-color: #99e2d0;
+  background-color: var(--tertiary);
   padding: 0;
   margin-left: 30px;
   margin-bottom: 10px;
@@ -514,7 +522,7 @@ footer i {
   top: 0;
   width: 100px;
   height: 80px;
-  background-color: #99E2D0;
+  background-color: var(--tertiary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -537,7 +545,7 @@ footer i {
   justify-content: center;
   width: 200px;
   padding: 15px 15px;
-  background: linear-gradient(170deg, #ff79da, #9356dc);
+  background: linear-gradient(170deg, var(--secondary), var(--primary));
   box-shadow: 0px 5px 5px lightgrey;
   border: none;
   border-radius: 50px;
@@ -552,7 +560,7 @@ footer i {
   font-size: large;
 }
 .command .btn:hover {
-  background: linear-gradient(170deg, #9356dc, #ff79da);
+  background: linear-gradient(170deg, var(--primary), var(--secondary));
 }
 
 @keyframes spin-check {

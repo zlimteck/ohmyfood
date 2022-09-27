@@ -15,7 +15,7 @@ body, main {
     }
       
     &::-webkit-scrollbar-thumb {
-        background: linear-gradient(100deg, #9356dc, #ff79da);
+        background: linear-gradient(100deg, var(--primary), var(--secondary));
     }
 }
 

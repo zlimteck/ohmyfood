@@ -41,7 +41,7 @@
         margin-right: auto;
         width: 250px;
         padding: 15px 15px;
-        background: linear-gradient(170deg, #ff79da, #9356dc);
+        background: linear-gradient(170deg, var(--secondary), var(--primary));
         box-shadow: 0px 5px 5px lightgrey;
         border: none;
         border-radius: 50px;
@@ -58,7 +58,7 @@
     }
 
     .btn:hover {
-        background: linear-gradient(170deg, #9356dc, #ff79da);
+        background: linear-gradient(170deg, var(--primary), var(--secondary));
     }
 }
 
@@ -77,7 +77,7 @@
     }
 
     .number {
-        background-color: #9356DC;
+        background-color: var(--primary);
         color: white;
         border-radius: 50%;
         padding: 1px 5px;
@@ -104,7 +104,7 @@
     .step:hover {
         background-color: #e4d5f6;
         & .fa-solid {
-            color: #9356DC;
+            color: var(--primary);
         }
     }
 
@@ -140,7 +140,7 @@
 
         .new-restaurant {
             font-weight: bold;
-            background-color: #99e2d0;
+            background-color: var(--tertiary);
             color: #1a8a68;
             width: 100px;
             text-align: center;
@@ -182,7 +182,7 @@
 
             .fas {
                 color: transparent;
-                background-image: linear-gradient(170deg, #ff79da, #9356dc);
+                background-image: linear-gradient(170deg, var(--secondary), var(--primary));
                 background-clip: text;
                 -webkit-background-clip: text;
                 opacity: 0;
