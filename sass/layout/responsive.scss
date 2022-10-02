@@ -1,10 +1,10 @@
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
 
     /*Header*/
 
     header {
         a {
-            right: 600px;
+            right: 390px;
         }
     }
 
@@ -26,8 +26,8 @@
 
     .step {
         justify-content: center;
-        width: 300px;
-        margin-right: 60px;
+        width: 270px;
+        margin-right: 30px;
     }
 
     .restaurants {
@@ -36,11 +36,13 @@
         .restaurant-list {
             display: flex;
             justify-content: space-between;
+            margin: 0 0 0 10px;
         }
 
         .restaurant-form {
-            width: 300px;
+            width: 270px;
             margin-bottom: 0px;
+            margin-right: 10px;
 
             &:hover {
                 transform: scale(1.05); 
@@ -58,7 +60,7 @@
     }
 
     /*Footer*/
-
+    
     footer {
         display: flex;
         justify-content: space-between;
@@ -77,6 +79,36 @@
             &:hover {
                 text-decoration: underline;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    /*Header*/
+
+    header {
+        a {
+            right: 600px;
+        }
+    }
+
+    /*HomePage*/
+
+    .step {
+        width: 300px;
+        margin-right: 60px;
+    }
+
+    .restaurants {
+
+        .restaurant-list {
+            margin: 0px;
+        }
+
+        .restaurant-form {
+            width: 300px;
+            margin-right: 0px;
         }
     }
 }
