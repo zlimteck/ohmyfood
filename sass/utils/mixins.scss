@@ -1,0 +1,11 @@
+@mixin heart {
+    color: transparent;
+    background-image: linear-gradient(170deg, var(--secondary), var(--primary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;   
+}
+
+@mixin heart-hover {
+    opacity: 1;
+}
