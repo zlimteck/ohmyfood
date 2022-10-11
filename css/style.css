@@ -290,9 +290,11 @@ header a:hover {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
+  transition: all 200ms ease-in-out;
 }
 .restaurants .restaurant-form .heart .fas:hover {
   opacity: 1;
+  transform: scale(1.1);
 }
 
 footer {
@@ -386,9 +388,11 @@ footer i {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
+  transition: all 200ms ease-in-out;
 }
 .restaurant-name .fas:hover {
   opacity: 1;
+  transform: scale(1.1);
 }
 
 .menu-restaurant {
